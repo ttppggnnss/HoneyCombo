@@ -23,10 +23,6 @@
 3. Liquors Service
    - 관리자가 매주 새로운 주류 조합을 게시합니다.
 
-[여기](http://honeycombo.online)를 클릭해 사이트를 확인하세요 :slightly_smiling_face:
-
-
-
 
 
 ## 📌 목차
@@ -35,11 +31,6 @@
 
    - [시작하기](#-시작하기)
      - [시작하기에 앞서](#시작하기에-앞서)
-     - [설치하기](#설치하기)
-     - [실행하기](#실행하기)
-     - [배포하기](#배포하기)
-     - [데모](#데모)
-- [지원하는 브라우저](#-지원하는-브라우저)
 - [사용된 도구](#-사용된-도구)
 - [사용된 기술](#-사용된-기술)
 - [저자](#-저자)
@@ -58,81 +49,6 @@
 * [JDK 1.8](https://www.oracle.com/kr/java/technologies/javase/javase-jdk8-downloads.html)
 * [Node.js 12.8.1](https://nodejs.org/ko/download/)
 * [MySQL 8.0](https://www.mysql.com/downloads/)
-
-### 설치하기
-
-1. 깃헙의 레포지토리를 클론합니다.
-
-   ```
-   $ git clone https://github.com/YongjoonSeo/1st_pjt_301.git
-   ```
-
-2. yarn을 설치합니다.
-
-   ```
-   $ yarn install
-   ```
-
-### 실행하기
-
-`Honey-combo` 서비스를 사용하기 위해서는 다음과 같은 방법으로 실행합니다:
-
-1. 데이터베이스를 설정합니다.
-
-   - [honey-combo.sql](https://github.com/YongjoonSeo/1st_pjt_301/blob/master/docs/honey-combo.sql)을 참고해서 데이터베이스를 생성합니다. ([여기](https://github.com/YongjoonSeo/1st_pjt_301/blob/master/docs/honeycombo_erd.png)를 눌러 erd를 확인하세요.)
-
-   - `application.yml`에 데이터베이스 설정을 추가합니다.
-
-     ```
-     spring:
-       datasource:
-         driver-class-name: com.mysql.cj.jdbc.Driver
-         url : jdbc:mysql://localhost:3306/honeycombo?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-         username : {데이터베이스 계정 아이디}
-         password : {데이터베이스 계정 비밀번호}
-     ```
-
-2. 백엔드 서버를 실행합니다.
-
-   - IDE에 import 후 실행합니다.
-
-     : IntelliJ, STS와 같은 IDE를 사용하는 경우, `backend`를 import하여 실행합니다.
-
-   - war파일을 생성 후 실행합니다.
-
-     ```
-     $ gradlew -DskipTests=true build
-     ```
-
-     ```
-     $ java -jar [filename].war
-     ```
-
-3. 프론트엔드를 실행합니다.
-
-   ```
-   $ yarn serve
-   ```
-
-### 배포하기
-
-해당 서비스는 `AWS EC2`를 이용하여 배포하였습니다. 사전에 [여기](https://victorydntmd.tistory.com/61)를 참고해서 `AWS EC2`계정을 생성하세요.
-
-배포를 하기위해서는 다음과 같은 방법으로 실행합니다:
-
-1. AWS EC2 인스턴스 생성
-2. JDK 설치 (환경변수 설정)
-3. DB 설치 (해당 프로젝트에서 MySQL 사용)
-4. gradle wrapper을 위한 버전 설정 (6.0.0 이상)
-5. gradle clean build 실행 (war 파일 생성)
-6. yarn build (dist 폴더 생성)
-7. Nginx (front-end, back-end 경로 설정)
-
-### 데모
-
-[여기](http://honeycombo.online)를 클릭하세요.
-
-
 
 ## :globe_with_meridians: 지원하는 브라우저
 
@@ -204,7 +120,7 @@
 
 ## :vhs: 시연 영상
 
-* [시연 영상](https://github.com/YongjoonSeo/1st_pjt_301/blob/master/docs/HONEYCOMBO_UCC_LOW.mp4)
+* [시연 영상](https://youtu.be/Vrj9zyP7zac)
 * 로그인, 피드, 댓글, 좋아요, 팔로우, 알림 서비스
   * <img src="https://user-images.githubusercontent.com/19357410/91041095-62eeb180-e64a-11ea-9614-ec12760ad28b.gif" width=350>
   * <img src="https://user-images.githubusercontent.com/19357410/91041119-6bdf8300-e64a-11ea-9f3c-b98d2d5e032f.gif" width=350>

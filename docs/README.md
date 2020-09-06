@@ -23,10 +23,6 @@
 3. Liquors Service
    - The admin posts a new liquor combination feed every week.
 
-You can see our homepage [here](http://honeycombo.online)​ :slightly_smiling_face:
-
-
-
 
 
 ## 📌 Table of Contents
@@ -35,12 +31,6 @@ You can see our homepage [here](http://honeycombo.online)​ :slightly_smiling_f
 
    - [Getting Started](#-getting-started)
         - [Prerequisites](#prerequisites)
-        - [Installing Honey-combo](#installing-honey-combo)
-        - [Using Honey-combo](#using-Honey-combo)
-        - [Deploying Honey-combo](#deploying Honey-combo)
-- [Browser Support](#-browser-support)
-- [Technical selection](#-technical selection)
-- [Demos](#-demos)
 - [Authors](#-authors)
 - [license](#-license)
 - [Acknowledgements](#-acknowledgements)
@@ -57,76 +47,6 @@ Before you begin, ensure you have met the following requirements:
 
 * You have a [Windows 10](https://www.microsoft.com/en-us/software-download/windows10) machine
 * You have installed the version of [JDK 1.8](https://www.oracle.com/kr/java/technologies/javase/javase-jdk8-downloads.html), [MySQL 8](https://www.mysql.com/downloads/), [Node.js 12.8.1](https://nodejs.org/ko/download/)
-
-### Installing Honey-combo
-
-To install `honey-combo`, follow these steps:
-
-1. Clone the repository
-
-   ```
-   $ git clone https://github.com/YongjoonSeo/1st_pjt_301.git
-   ```
-
-2. Install yarn packages
-
-   ```
-   $ yarn install
-   ```
-
-### Using Honey-combo
-
-To use `honey-combo`, follow these steps:
-
-1. Create Database
-
-   - Create database by referring to [honey-combo.sql](https://github.com/YongjoonSeo/1st_pjt_301/blob/master/docs/honey-combo.sql) ([here](https://github.com/YongjoonSeo/1st_pjt_301/blob/master/docs/honeycombo_erd.png) is ERD)
-
-   - Add database settings to the `application.yml`
-
-     ```
-     spring:
-       datasource:
-         driver-class-name: com.mysql.cj.jdbc.Driver
-         url : jdbc:mysql://localhost:3306/honeycombo?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-         username : {database user id}
-         password : {database user password}
-     ```
-
-2. Run back-end
-
-   - IDE import
-     : When you use IDE, import `backend` and just run as Spring Boot App
-
-   - Run war file
-
-     ```
-     $ gradlew -DskipTests=true build
-     ```
-
-     ```
-     $ java -jar [filename].war
-     ```
-
-3. Run front-end 
-
-   ```
-   $ yarn serve
-   ```
-
-### Deploying Honey-combo
-
-Before you start make sure you have `AWS EC2`. You can find out how to do that [here](https://victorydntmd.tistory.com/61).
-
-To deploy `Honey-combo`, follow these steps:
-
-1. Create an AWS EC2 Instance
-2. JDK installation (path setting)
-3. DB Installation (MySQL)
-4. Version setting for gradle wrapper (6.0.0 or above)
-5. Gradle clean build (create war file)
-6. Yarn build (create dist folder)
-7. Nginx (frontend and backend path setting)
 
 
 
@@ -200,8 +120,7 @@ To deploy `Honey-combo`, follow these steps:
 
 ## :vhs: Demos
 
-* You can see [here](http://honeycombo.online)
-* [Video](https://github.com/YongjoonSeo/1st_pjt_301/blob/master/docs/HONEYCOMBO_UCC_LOW.mp4)
+* [Video](https://youtu.be/Vrj9zyP7zac)
 * Common Service
   * <img src="https://user-images.githubusercontent.com/19357410/91041095-62eeb180-e64a-11ea-9614-ec12760ad28b.gif" width=350>
   * <img src="https://user-images.githubusercontent.com/19357410/91041119-6bdf8300-e64a-11ea-9f3c-b98d2d5e032f.gif" width=350>
