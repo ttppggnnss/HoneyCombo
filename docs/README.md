@@ -39,8 +39,6 @@
 
 ## :runner: Getting Started
 
-You can start `honey-combo` following these steps:
-
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:

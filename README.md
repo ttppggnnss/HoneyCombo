@@ -41,8 +41,6 @@
 
 ## :runner: 시작하기
 
-아래 방법을 따르시면 프로젝트를 실행시킬 수 있습니다.
-
 ### 시작하기에 앞서
 
 * [Windows 10](https://www.microsoft.com/en-us/software-download/windows10)
